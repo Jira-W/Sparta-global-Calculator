@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <script src="calculator.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+  <div class="container text-center">
+    <h1>Calculator App</h1>
+    <form class="" action="index.html" method="">
+      First Number
+      <input type="text" id="firstnum"> Second Number
+      <input type="text" id="secnum">
+
+
+      <input type="button" name="Add" value="+" onclick="addition()" />
+      <input type="button" name="Minus" value="-" onclick="subs()" />
+      <input type="button" name="Multi" value="X" onclick="multi()" />
+      <input type="button" name="Divide" value="/" onclick="divide()" />
+
+
+      <br>
+
+
+    </form>
+    <h1>=</h1>
+    <h2 id="result"></h2>
+  </div>
+  <br>
+
+  <div class="container text-center">
+    <h1>BMI</h1>
+    <div>
+      <label>Unit System</label>
+      <select id="system" name="Unit_system" onchange="changeUnit(this)">
+        <option value="Metric">Metric</option>
+        <option value="Imperial">Imperial</option>
+      </select>
+    </div>
+    <br>
+
+    <form class="" action="index.html" method="">
+      <label id="imp1">Height (m)</label>
+      <input type="text" id="bmi1">
+      <label id="imp2">Weight (kg)</label>
+      <input type="text" id="bmi2">
+
+      <input id="bmiCal" type="button" name="bmi" value="Submit" onclick="BMI()" />
+
+
+      <br>
+
+
+    </form>
+    <h1>=</h1>
+    <h2 id="resultbmi"></h2>
+  </div>
+
+  <script src="calculator.js" type="text/javascript">
+  </script>
+</body>
+
+</html>
