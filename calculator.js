@@ -52,7 +52,7 @@ function BMI2() {
 
   var x = (Weight*703) / (Height * Height);
   document.getElementById("resultbmi").innerHTML = x;
-  console.log(x);
+  // console.log(x)
 
 }
 
@@ -66,5 +66,6 @@ function changeUnit(y) {
   } else {
     document.getElementById('imp1').innerHTML = "Height (m)";
     document.getElementById('imp2').innerHTML = "Weight (kg)";
+    document.getElementById('bmiCal').onclick = BMI();
   }
 }
